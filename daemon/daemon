@@ -1,0 +1,39 @@
+#!/bin/sh
+
+# This is a sample DAEMON file which is started at boottime. iIt must be names
+# "start" here and will be renamed according to your Pluginname during
+# installation. CAUTION! MAKE SURE YOUR SCRIPT EXITS CLEANLY! It is a good idea
+# to start your daemon as background process. If you do something wrong here
+# your user's systems may hang forever during boottime!
+
+# Will be executed as user "root".
+
+# Name this file "daemon.sh" in your plugin-archive. It will be renamed to NAME
+# during installation
+
+pluginname=$(basename $0 .sh)
+
+if [ -x /usr/bin/logger ]
+then
+    /usr/bin/logger -s "loxberry-plugin-$pluginname - DAEMON Script from Mihome Plugin"
+fi
+
+cp /opt/loxberry/data/plugins/$pluginname/supervisor.conf /etc/supervisor/conf.d/mi_home.conf
+
+# supervisorctl start mihome
+
+
+#Install with root permission
+installed_st=$(pip3 list | grep "setuptools" | grep -v grep | wc -l)
+installed_pm=$(pip3 list | grep "mihome" | grep -v grep | wc -l)
+
+if [ $installed_st -eq "0" ]; then
+pip3 install -U pip setuptools
+echo "$D setuptools installed" >> /var/log/mihome.log
+fi
+if [ $installed_pm -eq "0" ]; then
+pip3 install mihome
+echo "$D mihome installed" >> /var/log/mihome.log
+fi
+
+exit 0
