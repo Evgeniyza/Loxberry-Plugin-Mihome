@@ -28,20 +28,22 @@ Jetzt geht es nur darum, alle Features zu durchlaufen und deine UDP-Befehle zu e
 
 ##
 
-* Gateway   
-Helligkeit / "illumination \v"
+Gateway :   
+* Helligkeit / "illumination \v"
 
-* Taster 1-f    
-Taste gedrückt (keine Flankenauswertung) / "click 1"    
-Batteriespannung / "voltage \v"
-* Würfel    
-90° Drehung / "status flip90"   
-180° Drehung / "status flip180"   
-Verschieben / "status move"   
-2x Klopfen / "status tap_twice"   
-Schütteln / "status shake_air"    
-Batteriespannung / "voltage \v"   
-* Temperatur- und Feuchtemesser mini   
-Temperatur / "temperature \v"   
-Luftfeuchtigkeit / "humidity \v"    
-Batteriespannung / "voltage \v"   
+Taster 1-f :    
+* Taste gedrückt (keine Flankenauswertung) / "click 1"    
+* Batteriespannung / "voltage \v"
+
+Würfel :  
+* 90° Drehung / "status flip90"   
+* 180° Drehung / "status flip180"   
+* Verschieben / "status move"   
+* 2x Klopfen / "status tap_twice"   
+* Schütteln / "status shake_air"    
+* Batteriespannung / "voltage \v"   
+
+Temperatur- und Feuchtemesser mini :    
+* Temperatur / "temperature \v"   
+* Luftfeuchtigkeit / "humidity \v"    
+* Batteriespannung / "voltage \v"   
