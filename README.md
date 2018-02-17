@@ -2,7 +2,7 @@
 
 
 
-Nach dem Herunterladen das Skript im Ordner /data/scripte/ öffnen und in der Datei run-mihome.py die Zeilen nach Bedarf anpassen:
+Nach dem Herunterladen das Skript im Ordner /data/scripts/ öffnen und in der Datei run-mihome.py die Zeilen nach Bedarf anpassen:
 
   #Loxone Adresse und Port 
   UDP_IP = '192.168.178.32' 
