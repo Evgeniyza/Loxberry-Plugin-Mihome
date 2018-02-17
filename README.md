@@ -24,3 +24,23 @@ Nach Erstellung des UDP Eingangs, den UDP-Monitor öffnen um zu sehen, ob die Ga
 ![digitalsensor erstellen](https://user-images.githubusercontent.com/32929378/36340528-358ec0ee-13df-11e8-9329-e4438ecc25d3.png)
 
 Jetzt geht es nur darum, alle Features zu durchlaufen und deine UDP-Befehle zu erstellen. Jedes Gerät hat seine eindeutige Kennung, so gibt es also keine Konflikte.
+
+##
+
+* Gateway   
+Helligkeit / "illumination \v"
+
+* Taster 1-f    
+Taste gedrückt (keine Flankenauswertung) / "click 1"    
+Batteriespannung / "voltage \v"
+* Würfel    
+90° Drehung / "status flip90"   
+180° Drehung / "status flip180"   
+Verschieben / "status move"   
+2x Klopfen / "status tap_twice"   
+Schütteln / "status shake_air"    
+Batteriespannung / "voltage \v"   
+* Temperatur- und Feuchtemesser mini   
+Temperatur / "temperature \v"   
+Luftfeuchtigkeit / "humidity \v"    
+Batteriespannung / "voltage \v"   
